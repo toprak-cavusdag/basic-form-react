@@ -1,9 +1,12 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import "./button.css"
 
 const Button = ({text, onClick })=>{
     return(
-        <button onClick={onClick} className="custom-bottom">{text}</button>
+        <div className="container">
+        <button onClick={onClick} className="custom-button">{text}</button>
+        </div>
     )
 }
 

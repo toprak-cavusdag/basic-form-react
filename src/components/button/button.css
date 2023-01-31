@@ -1,7 +1,7 @@
-.custom-buttom {
+.custom-button {
     text-transform: uppercase;
     outline: none;
-    width: 100%;
+    width: max-content;
     background-color: #0ea5e9;
     border: none;
     box-sizing: border-box;
@@ -9,10 +9,20 @@
     font-size: 16px;
     transition: all .3s ease;
     cursor: pointer;
+    color: white;
+
 }
 
-.custom-buttom:hover,
-.custom-buttom:active,
-.custom-buttom:focus {
+.custom-button:hover,
+.custom-button:active,
+.custom-button:focus {
     background-color: #38bdf8;
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 3px, rgba(0, 0, 0, 0.23) 0px 3px 3px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
