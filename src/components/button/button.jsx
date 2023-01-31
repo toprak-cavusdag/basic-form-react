@@ -13,7 +13,7 @@ Button.prototype ={
     onClick: PropTypes.func.isRequired,
 }
 Button.defaultProps ={
-    text: "Tıkla",
+    text: "Click",
 }
 
 

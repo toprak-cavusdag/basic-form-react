@@ -4,9 +4,11 @@
     width: max-content;
     background-color: #0ea5e9;
     border: none;
+    border: #0ea5e9 solid 1px;
     box-sizing: border-box;
     padding: 20px;
     font-size: 16px;
+    margin: 10px;
     transition: all .3s ease;
     cursor: pointer;
     color: white;
@@ -15,10 +17,8 @@
 }
 
 .custom-button:hover,
-.custom-button:active,
-.custom-button:focus {
+.custom-button:active {
     background-color: #ffff;
-    border: #0ea5e9 1px solid;
     color: #0ea5e9;
 }
 

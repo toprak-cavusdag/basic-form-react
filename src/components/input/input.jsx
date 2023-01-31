@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const Input = ({type,placeholder,value,onChange})=>{
     return(
-        <input className="custom-input" type="text" value={value} placeholder={placeholder} onChange={onChange} />
+        <input className="custom-input" type={type} value={value} placeholder={placeholder} onChange={onChange} />
     )
 }
 
@@ -17,7 +17,7 @@ Input.prototype ={
 }
 Input.defaultProps ={
     placeholder: "Değer Giriniz",
-    type: "Text"
+    type: "text"
 }
 
 export default Input

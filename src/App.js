@@ -6,31 +6,43 @@ import Form from './components/Form/form';
 
 function App() {
   const [text, setText] = useState('');
+  const [userForm, setUserForm] = useState({
+    userName: '',
+    password: '',
+  });
 
   return (
     <div className='custom-page'>
       <Form>
-        <h1>Giriş Sayfası</h1>
+        <h1>Login Page</h1>
         <Input
-          value={text}
-          placeholder={'Bir metin ifadesi giriniz...'}
+          value={userForm.userName}
+          placeholder={'Please Enter Your Name..'}
           onChange={(e) => {
-            setText(e.target.value);
+            setUserForm({
+              userName: e.target.value,
+              password: userForm.password,
+            });
           }}
         />
 
         <Input
-          value={text}
-          placeholder={'Bir metin ifadesi giriniz...'}
+          type='password'
+          value={userForm.password}
+          placeholder={'Enter Your Password...'}
           onChange={(e) => {
-            setText(e.target.value);
+            setUserForm({
+              password: e.target.value,
+              userName: userForm.userName,
+            });
           }}
         />
 
         <Button
-          text='Giriş Yap'
+          text='Login'
           onClick={() => {
-            alert('Tıklandı');
+            alert('Clicked');
+            console.log(userForm);
           }}
         />
       </Form>
