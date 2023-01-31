@@ -4,9 +4,7 @@ import "./button.css"
 
 const Button = ({text, onClick })=>{
     return(
-        <div className="container">
         <button onClick={onClick} className="custom-button">{text}</button>
-        </div>
     )
 }
 
