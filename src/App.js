@@ -11,6 +11,14 @@ function App() {
     password: '',
   });
 
+  const onValidation = () => {
+    if (userForm.userName === '' || userForm.password === '') {
+      alert('Invalid information or left blank');
+    } else {
+      alert('Shipment was successful');
+    }
+  };
+
   return (
     <div className='custom-page'>
       <Form>
@@ -38,13 +46,7 @@ function App() {
           }}
         />
 
-        <Button
-          text='Login'
-          onClick={() => {
-            alert('Clicked');
-            console.log(userForm);
-          }}
-        />
+        <Button text='Login' onClick={onValidation} />
       </Form>
     </div>
   );
