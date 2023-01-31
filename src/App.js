@@ -5,11 +5,20 @@ import Button from './components/button/button';
 import Form from './components/Form/form';
 
 function App() {
-  const [text, setText] = useState('Toprak');
+  const [text, setText] = useState('');
 
   return (
-    <div>
+    <div className='custom-page'>
       <Form>
+        <h1>Giriş Sayfası</h1>
+        <Input
+          value={text}
+          placeholder={'Bir metin ifadesi giriniz...'}
+          onChange={(e) => {
+            setText(e.target.value);
+          }}
+        />
+
         <Input
           value={text}
           placeholder={'Bir metin ifadesi giriniz...'}

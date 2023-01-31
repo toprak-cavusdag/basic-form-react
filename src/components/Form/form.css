@@ -4,7 +4,8 @@
     background-color: #ffff;
     max-width: 360px;
     margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 40px;
     text-align: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 9px;
 }
